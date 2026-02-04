@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./globals.css";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply antialiased;
+  }
+}
+
+/* Brutalist scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-stone-50;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-zinc-900;
+}
+
+/* Typography utilities */
+.tracking-brutal {
+  letter-spacing: -0.04em;
+}
+
+.text-brutal-shadow {
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
